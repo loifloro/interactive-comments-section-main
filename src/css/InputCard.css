@@ -1,0 +1,61 @@
+.inputCard {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    grid-template-areas: 
+    "inputCard__input inputCard__input"
+    "inputCard__img inputCard__btn";
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+
+    @media (min-width: 720px) {
+        grid-template-areas:
+            "inputCard__img inputCard__input inputCard__btn"
+            "inputCard__img inputCard__input inputCard__btn";
+            grid-template-columns: auto 1fr auto;
+    }
+
+    .inputCard__img {
+        width: 2rem;
+        height: 2rem;
+        grid-area: inputCard__img;
+    }
+
+    .inputCard__input {
+        all: unset;
+        width: 100%;
+        border: 1px solid var(--light-gray);
+        border-radius: .5rem;
+        padding: 1rem 1rem;
+        min-height: 100px;
+        color: var(--dark-blue);
+        overflow-wrap: break-word;
+        grid-area: inputCard__input;
+        box-sizing: border-box;
+    }
+
+    .inputCard__btn {
+        all: unset;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        border-radius: .4rem;
+        padding: .75rem 1.5rem;
+        background-color: var(--moderate-blue);
+        color: white;
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        grid-area: inputCard__btn;
+
+        &:hover {
+            background-color: var(--light-grayish-blue);
+        }
+    }
+
+
+}

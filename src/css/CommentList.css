@@ -1,0 +1,23 @@
+.commentList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width: 700px;
+    margin-top: 1rem;
+ 
+    .commentList__reply-thread {
+        display: flex;
+        -moz-column-gap: 1rem;
+             column-gap: 1rem;
+             margin-left: 1rem;
+    }
+    
+    .commentList__reply-line {
+        margin-top: 1rem;
+        margin-inline: 1rem;
+        height: auto;
+        width: 1px;
+        border-left: 2px solid var(--light-gray)
+    }
+
+}

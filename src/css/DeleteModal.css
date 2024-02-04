@@ -1,0 +1,78 @@
+.modal {
+    z-index: 10000;
+    display: grid;
+    place-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    overflow: hidden;
+    background-color: hsla(216, 2%, 53%, 0.411);
+    padding: 1rem;
+    box-sizing: border-box;
+
+    .modal__card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: .5rem;
+        max-width: 500px;
+    }
+
+    .modal__title {
+        font-size: 1.5rem;
+        color: var(--dark-blue);
+        margin-top: .5rem;
+    }
+
+    .modal__actions {
+        display: flex;
+        -moz-column-gap: .8rem;
+        column-gap: .8rem;
+        margin-top: 2rem;
+    }
+
+    .modal__content {
+        color: var(--grayish-blue);
+        line-height: 1.5;
+    }
+
+    .modal__cancel-btn {
+        all: unset;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        border-radius: .4rem;
+        padding: .75rem 1.5rem;
+        background-color: var(--dark-blue);
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+            background-color: var(--grayish-blue);
+        }
+    }
+
+    .modal__submit-btn {
+        all: unset;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        border-radius: .4rem;
+        padding: .75rem 1.5rem;
+        background-color: var(--soft-red);
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+            background-color: var(--pale-red);
+        }
+    }
+}
