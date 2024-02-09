@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/loifloro/interactive-comments-section-main)
+- Live Site URL: [Netlify](https://lois-interactive-comments-section.netlify.app/)
 
 ## My process
 
@@ -52,7 +52,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge I learned how to use **localStorage** on handling the data provided with the resources. In this of handling it through the data.json file, I decided to push it to the localStorage to be familiarized using it for the next challenges
+In this challenge I learned how to use **localStorage** on handling the data provided with the resources. In this challenge with handling through the data.json file, I decided to push it to the localStorage to be familiarized using it for the next challenges
 
 ```js
 const [comments, setComments] = useState(
@@ -60,7 +60,7 @@ const [comments, setComments] = useState(
 );
 ```
 
-One of my goals in this project is to apply some common hooks that I have learned from the past few days such as **useEffect**. I utilize useEffect hook by pushing the data.json at the first render if its not yet in there.
+One of my goals in this project is to apply some common hooks that I have learned from the past few days such as **useEffect**. I utilize useEffect hook by pushing the data.json at the first render if its not yet in located in the localStorage.
 
 ```js
 useEffect(() => {
