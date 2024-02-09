@@ -4,9 +4,9 @@
     border-radius: 1rem;
     box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
     display: grid;
-    grid-template-areas: 
-    "inputCard__input inputCard__input"
-    "inputCard__img inputCard__btn";
+    grid-template-areas:
+        "inputCard__input inputCard__input"
+        "inputCard__img inputCard__btn";
     grid-template-columns: 1fr auto;
     gap: 1rem;
 
@@ -14,7 +14,7 @@
         grid-template-areas:
             "inputCard__img inputCard__input inputCard__btn"
             "inputCard__img inputCard__input inputCard__btn";
-            grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
     }
 
     .inputCard__img {
@@ -34,6 +34,13 @@
         overflow-wrap: break-word;
         grid-area: inputCard__input;
         box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            border: 1px solid var(--dark-blue);
+
+        }
     }
 
     .inputCard__btn {

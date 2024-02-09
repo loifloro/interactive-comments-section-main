@@ -3,7 +3,6 @@
     flex-direction: column;
     row-gap: 1rem;
     max-width: 700px;
-    margin-top: 1rem;
  
     .commentList__reply-thread {
         display: flex;
@@ -13,7 +12,6 @@
     }
     
     .commentList__reply-line {
-        margin-top: 1rem;
         margin-inline: 1rem;
         height: auto;
         width: 1px;

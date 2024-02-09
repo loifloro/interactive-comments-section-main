@@ -35,7 +35,7 @@ export default function CommentList() {
         comments
           .sort((a, b) => b.score - a.score)
           .map((comment) => (
-            <div key={comment.id}>
+            <div className="commentList" key={comment.id}>
               <CommentCard  commentItem={comment} isComment />
               {comment.replies.length !== 0 && (
                 <div className="commentList__reply-thread">
